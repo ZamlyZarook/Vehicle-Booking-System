@@ -1,0 +1,383 @@
+body {
+  font-family: Arial, sans-serif, "Katibeh-Regular", Helvetica, "Kavoon-Regular", "Alex Brush-Regular", Helvetica;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+
+}
+
+/*----------------------------------- This is comon for all pages -------------------------------------------------*/
+  .box {
+    width: 100%;
+    height: 270px;
+  }
+  
+   .box .group {
+    position: fixed;
+    width: 100%;
+    height: 270px;
+    top: 0;
+    left: 0;
+  }
+  
+   .box .overlap-group {
+    position: relative;
+    width: 100%;
+    height: 270px;
+  }
+  
+   .box .d {
+    position: absolute;
+    width: 100%;
+    height: 270px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  
+   .box .text-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    left: 50px;
+    font-family: "Katibeh-Regular", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 90px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .box .vehicle {
+    position: absolute;
+    width: 824px;
+    height: 219px;
+    top: 62px;
+    right: 110px;
+    object-fit: cover;
+  }
+  
+   .box .div {
+    position: absolute;
+    width: 676px;
+    top: 4px;
+    right: 0px;
+    font-family: "Alex Brush-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 60px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+   .box .rectangle {
+    position: absolute;
+    width: 390px;
+    height: 115px;
+    top: 131px;
+    left: 350px;
+    background-color: #ffffffd4;
+    border-radius: 32px;
+  }
+  
+  .box .text-wrapper-2 {
+    position: absolute;
+    width: 644px;
+    top: 130px;
+    left: 50px;
+    font-family: "Kavoon-Regular", Helvetica; 
+    font-weight: 600;
+    color: #ff0000;
+    font-size: 105px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+nav {
+  background-color: #022d3d;
+  padding: 5px;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 10;
+  margin: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+.nav-bar:hover{
+background-color: #4d879b;
+}
+
+nav ul li a {
+  display: block;
+  padding: 14px 25px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #555;
+}
+
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+nav ul li ul li {
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul li ul li a {
+  padding: 10px 20px;
+}
+
+
+footer {
+  background-color: #022d3d;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  position:relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  display: inline;
+  color:#fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.social-media .fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 2px;
+  border-radius: 50%;
+}
+
+.social-media .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: white;
+  padding: 10px;
+  border-radius: 50%; /* Makes the icon circular */
+  font-size: 20px; /* Adjust the size */
+}
+
+footer .copyright{
+  margin-top: 40px;
+  color: #ffffff;
+}
+
+/*----------------------------------- This is only for index.php page -------------------------------------------------*/
+
+.menu-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.sub-menu {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.sub-menu img {
+  border-radius: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#022d3d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover{
+  background-color: #4d879b;
+}
+
+/*----------------------------------- This is only for admin_login.php page  -------------------------------------------------*/
+/*----------------------------------- This is only for user_login.php page  --------------------------------------------------*/
+
+.form-page h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #022d3d;
+}
+
+.form-page form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form-page label {
+  display: block;
+  margin-bottom: 8px;
+  color: #022d3d;
+}
+
+.form-page input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-page input[type="submit"] {
+  background-color: #022d3d;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-page input[type="submit"]:hover {
+  background-color: #4d879b;
+}
+
+.form-page .para {
+  text-align: center;
+  margin-top: 20px;
+  color: #022d3d;
+}
+.form-page a {
+  text-decoration: none;
+}
+
+/*----------------------------------- This is only for admin_registration_login.php page -----------------------------------------*/
+/*----------------------------------- This is only for user_registration_login.php page ------------------------------------------*/
+
+.form-reg h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: #022d3d;
+}
+
+.form-reg form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* position: relative; */
+}
+
+.form-reg label {
+  display: block;
+  margin-bottom: 8px;
+  color: #022d3d;
+}
+
+.form-reg input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-reg input[type="submit"] {
+  background-color: #022d3d;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-reg input[type="submit"]:hover {
+  background-color: #4d879b;
+}
+
+.form-reg input[type="button"] {
+  background-color: #022d3d;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-reg input[type="button"]:hover {
+  background-color: #4d879b;
+}
+
+.form-reg p {
+  text-align: center;
+  margin-top: 20px;
+  color: #022d3d;
+}
+
+.form-reg a {
+  color: #022d3d;
+  text-decoration: none;
+}
+
+.form-reg  a:hover {
+  text-decoration: none;
+}
+
+.form-reg  span {
+  font-weight: bold;
+}
+
+/*----------------------------------- This is for table design in the system ------------------------------------------*/
+
+
